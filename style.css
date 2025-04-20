@@ -5,8 +5,9 @@ body {background-image: url(./assets/assets/bg-mobile.jpg);
       background-repeat: no-repeat;
       background-size: cover;}
 #container {
-    width: 360px;
+    width: 100%;
     margin: 56px auto 0px;
+    max-width: 588px;
 }
 
 body * { font-family: "Inter", sans-serif;
