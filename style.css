@@ -12,7 +12,6 @@ body {background-image: url(./assets/assets/bg-mobile.jpg);
 
 body * { font-family: "Inter", sans-serif;
     color: var(-webkit-text-fill-color);
-    height: 100vh;
 }
 
 :root { -webkit-text-fill-color: white;
@@ -76,12 +75,13 @@ body * { font-family: "Inter", sans-serif;
     transform: translateY(-50%);
 
     z-index: 1;
+    animation: slide-back 0.2s;
  }
 
- .ligth #switch button{
-    right: 0;
-    left: initial;
- }
+ .ligth #switch button {
+    animation: slide-in 0.4s forwards;
+
+}
  #switch span {
     display: block;
    width: 64px;
@@ -149,6 +149,28 @@ footer {text-align: center;
     }
     .ligth {
         --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+    }
+
+}
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+
+}
+@keyframes slide-back  {
+     from { left: 50%
+    
+    } to{left: 0%}
+
+
+    from { left: 50%
+    }
+      to {left: 0
     }
 
 }
