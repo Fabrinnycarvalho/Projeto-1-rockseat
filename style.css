@@ -12,6 +12,7 @@ body {background-image: url(./assets/assets/bg-mobile.jpg);
 
 body * { font-family: "Inter", sans-serif;
     color: var(-webkit-text-fill-color);
+    height: 100vh;
 }
 
 :root { -webkit-text-fill-color: white;
@@ -140,5 +141,14 @@ border-radius: 50%;
 }
 footer {text-align: center;
     padding: 24px 0;
+
+}
+@media(min-width: 700px) {
+    :root{
+        --bg-url: url(./assets/assets/bg-desktop.jpg);
+    }
+    .ligth {
+        --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+    }
 
 }
